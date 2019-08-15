@@ -6,40 +6,61 @@ Here we document different keras layers that `hls4ml` support. We also provide d
 
 We currently support translations for the following Keras layers:
 
-### Core Layers:
-
+<details>
+<summary>Core Layers</summary>
+<p>
+  
 - `InputLayer`
 - `Dropout`
 - `Flatten`
 - `Dense`
 - `BinaryDense`
 - `TernaryDense`
+</p>
+</details>
 
-### Convolutional Layers:
+<details>
+<summary>Convolutional Layers</summary>
+<p>
 
 - `Conv1D`
 - `Conv2D`
+</p>
+</details>
 
-### Pooling Layers:
+<details>
+<summary>Pooling Layers</summary>
+<p>
 
 - `MaxPooling1D`
 - `MaxPooling2D`
 - `AveragePooling1D`
 - `AveragePooling2D`
+</p>
+</details>
 
-### Normalization Layers:
+<details>
+<summary>Normalization Layers</summary>
 
 - `BatchNormalization`
+</p>
+</details>
 
-### Activation Layers:
+<details>
+<summary>Activation Layers</summary>
+</p>
 
 - `Activation`
 - `LeakyReLU`
 - `ThresholdedReLU`
 - `ELU`
 - `PReLU`
+</p>
+</details>
 
-### Merge Layers:
+<details>
+<summary>Merge Layers</summary>
+</p>
 
 - `Add`
 - `Subtract`
@@ -48,5 +69,7 @@ We currently support translations for the following Keras layers:
 - `Maximum`
 - `Minimum`
 - `Concatenate`
+</p>
+</details>
 
 ## Example models
