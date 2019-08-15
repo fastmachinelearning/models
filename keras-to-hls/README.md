@@ -82,7 +82,9 @@ Here we provide detailed documentations for our example Keras models with regard
   
   #### Architecture:
   
-  This model has 385 parameters in total. 
+  ![alt text](./example-keras-model-files/1-layer-model/img-1layer.png)
+  
+  This model has **385** parameters in total. 
   
   #### Example inputs and expected predictions:
   
