@@ -80,11 +80,11 @@ Here we provide detailed documentations for our example Keras models with regard
 <details>
   </p>
   
-  #### Architecture
+  #### Architecture:
   
   This model has 385 parameters in total. 
   
-  #### Example inputs and expected predictions
+  #### Example inputs and expected predictions:
   
   
   </p>
