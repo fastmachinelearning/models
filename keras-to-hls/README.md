@@ -73,3 +73,15 @@ We currently support translations for the following Keras layers:
 </details>
 
 ## Example models
+
+Here we provide detailed documentations for our example Keras models with regard to their architecture, inputs and predictions. All of the example model `json` and `h5` files are stored in `example-keras-model-files`
+### 1 layer model
+[KERAS_1layer.json](./example-keras-model-files/KERAS_1layer.json) and [KERAS_1layer_weights.h5](./example-keras-model-files/KERAS_1layer_weights.h5)
+
+<details>
+  </p>
+  
+  </p>
+</details>
+
+### 3-layer models
