@@ -80,11 +80,9 @@ Here we provide detailed documentations for our example Keras models with regard
 <details>
   </p>
   
-  #### Architecture:
+  #### Architecture (total params = 385):
   
   ![alt text](./example-keras-model-files/1-layer-model/img-1layer.png)
-  
-  This model has **385** parameters in total. 
   
   #### Example inputs and expected predictions:
   
@@ -93,3 +91,17 @@ Here we provide detailed documentations for our example Keras models with regard
 </details>
 
 ### [3-layer models](./example-keras-model-files/3-layer-models/)
+
+<details>
+  <summary>3 fully-connected layers</summary>
+  </p>
+  
+  [Link to directory](./example-keras-model-files/3-layer-models/3-layer)
+  
+  #### Architecture (total params = 4,389):
+  ![alt text](./example-keras-model-files/3-layer-models/3-layer/img-3layer.png)
+  
+  #### Example inputs and expected predictions:
+  
+  </p>
+</details>
