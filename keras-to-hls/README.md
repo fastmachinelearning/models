@@ -80,7 +80,7 @@ Here we provide detailed documentations for our example Keras models with regard
 <details>
   </p>
   
-  #### Architecture (total params = 385):
+  #### Architecture (total params = trainable params = 385):
   
   ![alt text](./example-keras-model-files/1-layer-model/img-1layer.png)
   
@@ -98,7 +98,7 @@ Here we provide detailed documentations for our example Keras models with regard
   
   [Link to directory](./example-keras-model-files/3-layer-models/3-layer)
   
-  #### Architecture (total params = 4,389):
+  #### Architecture (total params = trainable params = 4,389):
   ![alt text](./example-keras-model-files/3-layer-models/3-layer/img-3layer.png)
   
   #### Example inputs and expected predictions:
@@ -110,8 +110,10 @@ Here we provide detailed documentations for our example Keras models with regard
   <summary>3 fully-connected layers with batch normalization</summary>
   </p>
   
-  #### Architecture (total params = 4,389):
-
+  [Link to directory](./example-keras-model-files/3-layer-models/3-layer-batch-norm/)
+  
+  #### Architecture (Total params: 4,921; Trainable params: 4,655):
+  ![alt text](./example-keras-model-files/3-layer-models/3-layer-batch-norm/img-3-layer-batch-norm.png)
   
   #### Example inputs and expected predictions:
   
