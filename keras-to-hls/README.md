@@ -1,10 +1,10 @@
 # Keras to HLS
 
-Here we document different keras layers that `hls4ml` support. We also provide documentation for different example keras models (model json for architecture and hdf5 for weights and biases) that can be translated to HLS using `hls4ml` 
+Here we document different keras layers that `hls4ml` support. We also provide documentation for different example keras models (model `json` file for architecture and `hdf5` file for weights and biases) that can be translated to HLS using `hls4ml` 
 
 ## Supported layers
 
-We currently support translations for the following Keras layers:
+We currently support translations for the following Keras layers. Note that some layers are not fully supported, so we will also provide specific limitations for those layers here:
 
 <details>
 <summary>Core Layers</summary>
