@@ -105,3 +105,15 @@ Here we provide detailed documentations for our example Keras models with regard
   
   </p>
 </details>
+
+<details>
+  <summary>3 fully-connected layers with batch normalization</summary>
+  </p>
+  
+  #### Architecture (total params = 4,389):
+
+  
+  #### Example inputs and expected predictions:
+  
+ </p>
+</details>
