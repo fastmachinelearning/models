@@ -92,4 +92,4 @@ Here we provide detailed documentations for our example Keras models with regard
   </p>
 </details>
 
-### 3-layer models
+### [3-layer models](./example-keras-model-files/3-layer-models/)
