@@ -6,7 +6,7 @@ Here we document different keras layers that `hls4ml` supports. We also provide 
 
 ### General limitations:
 
-- `keras.layers.Lambda` is not currently supported
+- `keras.layers.Lambda` is currently not supported
 
 ### Specific documentations of supported layers (including detailed limitations):
 
