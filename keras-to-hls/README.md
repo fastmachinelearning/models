@@ -7,6 +7,8 @@ Here we document different keras layers that `hls4ml` supports. We also provide 
 ### General limitations:
 
 - `keras.layers.Lambda` is currently not supported
+- Layer's operations on different axes are generally not supported (except for `Concatenate` layer)
+
 
 ### Specific documentations of supported layers (including detailed limitations):
 
@@ -62,7 +64,11 @@ We currently support translations for the following Keras layers. Note that some
 <details>
 <summary>Normalization Layers</summary>
 
-- `BatchNormalization`
+- `BatchNormalization`:
+
+  - `center = True` (add offset to normalized tensor) is not supported
+  - operations on different axes is not supported (always use Keras's default `axis = -1`)
+-----------
 </p>
 </details>
 
