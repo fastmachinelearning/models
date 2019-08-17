@@ -6,9 +6,9 @@ Here we document different keras layers that `hls4ml` supports. We also provide 
 
 ### General limitations:
 
-- `keras.layers.Lambda` is currently not supported
-- Layer's operations on different axes are generally not supported (except for `Concatenate` layer)
-
+- `keras.layers.Lambda` is currently not supported.
+- Layer's operations on different axes are generally not supported (except for `Concatenate` layer).
+- Dilations are not supported for convolutional layers.
 
 ### Specific documentations of supported layers (including detailed limitations):
 
