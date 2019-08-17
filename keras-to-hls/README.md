@@ -1,21 +1,35 @@
 # Keras to HLS
 
-Here we document different keras layers that `hls4ml` support. We also provide documentation for different example keras models (model `json` file for architecture and `hdf5` file for weights and biases) that can be translated to HLS using `hls4ml` 
+Here we document different keras layers that `hls4ml` supports. We also provide documentation for different example keras models (model `json` file for architecture and `hdf5` file for weights and biases) that can be translated to HLS using `hls4ml` 
 
 ## Supported layers
+
+### General limitations:
+
+- `keras.layers.Lambda` is not currently supported
+
+### Specific documentations of supported layers (including detailed limitations):
 
 We currently support translations for the following Keras layers. Note that some layers are not fully supported, so we will also provide specific limitations for those layers here:
 
 <details>
 <summary>Core Layers</summary>
 <p>
-  
+
 - `InputLayer`
+-----------
 - `Dropout`
+-----------
 - `Flatten`
-- `Dense`
+-----------
+- `Dense`:
+
+  - `use_bias = False` is not supported, meaning bias is always needed for dense layer to be translated.
+-----------
 - `BinaryDense`
+-----------
 - `TernaryDense`
+-----------
 </p>
 </details>
 
@@ -23,8 +37,14 @@ We currently support translations for the following Keras layers. Note that some
 <summary>Convolutional Layers</summary>
 <p>
 
-- `Conv1D`
-- `Conv2D`
+- `Conv1D`:
+
+  - Dilations are not supported for convolutional layers
+-----------
+- `Conv2D`:
+
+  - Dilations are not supported for convolutional layers
+-----------
 </p>
 </details>
 
