@@ -9,7 +9,7 @@ Here we document different keras layers that `hls4ml` supports. We also provide 
 - `keras.layers.Lambda` is currently not supported.
 - Layer's operations on different axes are generally not supported (except for `Concatenate` layer), we are just using the each layer's default axis. 
 - Dilations are not supported for convolutional layers.
-- We current do not support different data format (using `data_formal = "channels_last"` as default)
+- We currently do not support different data format (using `data_formal = "channels_last"` as default)
 
 ### Specific documentations of supported layers (including detailed limitations):
 
