@@ -64,6 +64,7 @@ We currently support translations for the following Keras layers. Note that some
 
 - `BatchNormalization`:
 
+  - `scale = False` is currently not supported
   - `center = True` (add offset to normalized tensor) is not supported
   - Operations on different axes is not supported (always use Keras's default `axis = -1`)
 
