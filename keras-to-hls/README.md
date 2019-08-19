@@ -9,6 +9,7 @@ Here we document different keras layers that `hls4ml` supports. We also provide 
 - `keras.layers.Lambda` is currently not supported.
 - Layer's operations on different axes are generally not supported (except for `Concatenate` layer).
 - Dilations are not supported for convolutional layers.
+- We current do not support different data format (using `data_formal = "channels_last"` as default)
 
 ### Specific documentations of supported layers (including detailed limitations):
 
@@ -19,19 +20,14 @@ We currently support translations for the following Keras layers. Note that some
 <p>
 
 - `InputLayer`
------------
 - `Dropout`
------------
 - `Flatten`
------------
 - `Dense`:
 
-  - `use_bias = False` is not supported, meaning bias is always needed for dense layer to be translated.
------------
+  - `use_bias = False` is not supported.
+  
 - `BinaryDense`
------------
 - `TernaryDense`
------------
 </p>
 </details>
 
@@ -40,13 +36,11 @@ We currently support translations for the following Keras layers. Note that some
 <p>
 
 - `Conv1D`:
-
+  - `use_bias = False` is not supported.
   - Dilations are not supported for convolutional layers
------------
 - `Conv2D`:
-
+  - `use_bias = False` is not supported.
   - Dilations are not supported for convolutional layers
------------
 </p>
 </details>
 
@@ -94,7 +88,9 @@ We currently support translations for the following Keras layers. Note that some
 - `Average`
 - `Maximum`
 - `Minimum`
-- `Concatenate`
+- `Concatenate`: 
+  - Concatenation is supported up to 3D. 
+
 </p>
 </details>
 
