@@ -1,5 +1,5 @@
 # hls4ml Models
-This repository contains a number of different models implemented in [hls4ml](https://hls-fpga-machine-learning.github.io/hls4ml/)
+This repository contains a number of different example models implemented in [hls4ml](https://hls-fpga-machine-learning.github.io/hls4ml/)
 
 We support translations of different machine learning/ deep learning library. Here we provide example models and secific documentations for supported features of different language:
 
