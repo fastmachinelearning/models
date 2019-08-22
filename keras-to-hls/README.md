@@ -10,6 +10,7 @@ Here we document different keras layers that `hls4ml` supports. We also provide 
 - Layer's operations on different axes are generally not supported (except for `Concatenate` layer), we are just using the each layer's default axis. 
 - Dilations are not supported for convolutional layers.
 - We currently do not support different data format (using `data_formal = "channels_last"` as default)
+- Some layers supported here (e.g `BinaryDense` and `TernaryDense`) are not implemented in the main Keras distribution. If you want to use them refer to [here](https://github.com/hls-fpga-machine-learning/keras-training/tree/master/layers) for detailed implementation. 
 
 ### Specific documentations of supported layers (including detailed limitations):
 
@@ -24,10 +25,16 @@ We currently support translations for the following Keras layers. Note that some
 - `Flatten`
 - `Dense`:
 
-  - `use_bias = False` is not supported.
+	- `use_bias = False` is not supported.
   
-- `BinaryDense`
-- `TernaryDense`
+- `BinaryDense`:
+
+	- not implemented in the main Keras distribution, refer to [here](https://github.com/hls-fpga-machine-learning/keras-training/tree/master/layers) for more details. 
+	
+- `TernaryDense`:
+
+	- not implemented in the main Keras distribution, refer to [here](https://github.com/hls-fpga-machine-learning/keras-training/tree/master/layers) for more details. 
+	
 </p>
 </details>
 
