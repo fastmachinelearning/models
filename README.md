@@ -1,10 +1,10 @@
-# hls4ml Models
-This repository contains a number of different example models implemented in [hls4ml](https://hls-fpga-machine-learning.github.io/hls4ml/)
+# hls4ml models
+This repository contains a number of different configuration files along with example models whose translations are supported in [hls4ml](https://fastmachinelearning.org/hls4ml/).
 
-We support translations of different machine learning/ deep learning libraries. Here we provide example models and secific documentations for supported features:
+Here we provide example models and secific documentations for supported features:
 
-- [Keras](./keras-to-hls)
-- [ONNX](./onnx-to-hls)
-- [Pytorch](./pytorch-to-hls)
+- [Keras](./keras)
+- [ONNX](./onnx)
+- [Pytorch](./pytorch)
 
-The models are a collection of various HLS projects with examples of different machine learning algorithm implementations. They are intended to be well-maintained, tested, and kept up to date with with the lastest stable `hls4ml` version.
+The models are intended to be well-maintained, tested, and kept up to date with with the lastest stable `hls4ml` version.
