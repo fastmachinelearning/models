@@ -106,3 +106,11 @@ We currently support translations for the following Keras layers. Note that some
 
 </p>
 </details>
+
+## Model testing
+
+We carried out models testing using configuration given as in the example [configuration file](https://fastmachinelearning.org/hls4ml/setup/CONFIGURATION.html)). Here are documentations of which models synthesize sucessfullt and which don't under those specific configurations:
+
+- `KERAS_1layer`: all models synthesized sucessfully.
+- `KERAS_3layer`: all models synthesized sucessfully.
+- `KERAS_conv`: all models except for `KERAS_conv1d.json` and  `KERAS_conv2d_model.json`, likely due to limited resouce, recommend implementing on larger FPGAs or modifying the precision and reuse factor.
