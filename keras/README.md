@@ -109,8 +109,11 @@ We currently support translations for the following Keras layers. Note that some
 
 ## Model testing
 
-We carried out models testing using configuration given as in the example [configuration file](https://fastmachinelearning.org/hls4ml/setup/CONFIGURATION.html)). Here are documentations of which models synthesize sucessfullt and which don't under those specific configurations:
+We carried out models testing using configuration given as in the example [configuration file](https://fastmachinelearning.org/hls4ml/setup/CONFIGURATION.html)). Here are documentations of which models synthesize sucessfully and which don't under those specific configurations. Note that we carried out the testing in vivado verison 2018.2):
 
-- `KERAS_1layer`: all models synthesized sucessfully.
-- `KERAS_3layer`: all models synthesized sucessfully.
-- `KERAS_conv`: all models except for `KERAS_conv1d.json` and  `KERAS_conv2d_model.json`, likely due to limited resouce, recommend implementing on larger FPGAs or modifying the precision and reuse factor.
+- `KERAS_1layer`: all models synthesized sucessfully with out-of-the-box configuration.
+- `KERAS_3layer`: all models synthesized sucessfully with out-of-the-box configuration.
+- `KERAS_conv`: all models except for `KERAS_conv1d.json` and  `KERAS_conv2d_model.json` (this model works for vivado version 2017.2).
+- `KERAS_dense`: model `KERAS_dense_16x100x100x100x100x100x5.json` synthesize sucessfully, note that one has to specify `Strategy: resource` and use a large reuse factor (we used 2000) in the configuration in order for the models to synthesize. Other models are under testing and are likely not to work. 
+- `jetTagger`: all models does NOT synthesize (might work on vivado version 2017.2).
+- `KERAS_bnn`(binary neural network): all models synthesized sucessfully with out-of-the-box configuration.
