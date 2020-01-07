@@ -114,6 +114,7 @@ We carried out models testing using configuration given as in the example [confi
 - `KERAS_1layer`: all models synthesized sucessfully with out-of-the-box configuration.
 - `KERAS_3layer`: all models synthesized sucessfully with out-of-the-box configuration.
 - `KERAS_conv`: all models except for `KERAS_conv1d.json` and  `KERAS_conv2d_model.json` (this model works for vivado version 2017.2).
-- `KERAS_dense`: model `KERAS_dense_16x100x100x100x100x100x5.json` synthesize sucessfully, note that one has to specify `Strategy: resource` and use a large reuse factor (we used 2000) in the configuration in order for the models to synthesize. Other models are under testing and are likely not to work. 
+- `KERAS_dense`: model `KERAS_dense_16x100x100x100x100x100x5.json` synthesize sucessfully, note that one has to specify `Strategy: resource` and use a large reuse factor (we used 2000) in the configuration in order for the models to synthesize. Other models does not synthesize using current master branch.
+**NOTE:** If you really need to sythesize bigger dense model, you can install an older version of `hls4ml` from [this branch](https://github.com/hls-fpga-machine-learning/hls4ml/tree/nvt/large_mlp_wDep_v6). The tutorial on how to use the older model can be found [here](https://github.com/FPGA4HEP/course_material/blob/paris/part1_hls4ml_intro.md). 
 - `jetTagger`: all models does NOT synthesize (might work on vivado version 2017.2).
 - `KERAS_bnn`(binary neural network): all models synthesized sucessfully with out-of-the-box configuration.
