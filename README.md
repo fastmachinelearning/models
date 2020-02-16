@@ -7,4 +7,4 @@ Here we provide example models and secific documentations for supported features
 - [ONNX](./onnx)
 - [Pytorch](./pytorch)
 
-The models are intended to be well-maintained, tested, and kept up to date with with the lastest stable `hls4ml` version.
+The models are intended to be well-maintained, tested, and kept up to date with with the lastest stable `hls4ml` version. Additionally, we also provide example HLS projects that have been converted using `hls4ml` in [HLS_projects](./HLS_projects) directory. 
