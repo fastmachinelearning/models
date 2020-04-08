@@ -1,0 +1,14 @@
+KerasH5: conv-model/Conv1d-85.h5
+OutputDir: conv-model/my-hls-test
+ProjectName: myproject
+XilinxPart: xcku115-flvb2104-2-i
+ClockPeriod: 5
+Backend: Vivado
+
+IOType: io_parallel
+HLSConfig:
+    Model:
+        Trace: True
+        Precision: float
+        ReuseFactor: 16
+        Strategy: Resource
